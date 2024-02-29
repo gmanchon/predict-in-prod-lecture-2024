@@ -1,5 +1,11 @@
 
-## instructions
+## docker google auth
+
+``` bash
+gcloud auth configure-docker europe-west1-docker.pkg.dev
+```
+
+## docker
 
 ``` bash
 docker build -t taxifare .
@@ -26,7 +32,7 @@ docker push $IMAGE_NAME
 gcloud run deploy --image $IMAGE_NAME --region $REGION
 ```
 
-## apple silicon
+## docker on apple silicon
 
 ``` bash
 docker build -t $IMAGE_NAME:intel --platform linux/amd64 .
